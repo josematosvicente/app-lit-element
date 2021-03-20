@@ -34,7 +34,7 @@ class InputSearch extends LitElement {
         <button class="btn btn-outline-secondary" @click="${this.filtrar}" type="button" id="button-addon2">Button</button>
       </div>
     </div>
-      </body>`
+    </body>`
   }
 }
 customElements.define('input-search', InputSearch);

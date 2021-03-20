@@ -19,7 +19,7 @@ class ProductCard extends LitElement {
         }
     }
     return results;
-}
+  }
 
   render() {
 
@@ -35,25 +35,25 @@ class ProductCard extends LitElement {
 
     return html`<header>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</header>
-<div class="d-lg-flex">
-${searchData.map((item)=>
-  html`
-<div class="card  ml-3 mt-3" style="width: 20rem;">
-  <img class="card-img-top" src="/images/iroman.png" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">${item.name}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div class="d-flex  justify-content-center w-100">
-      <a href="#" class="btn btn-primary w-100">Ver Detalle</a>
+    </header>
+    <div class="d-lg-flex">
+    ${searchData.map((item)=>
+      html`
+        <div class="card  ml-3 mt-3" style="width: 20rem;">
+          <img class="card-img-top" src="/images/iroman.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">${item.name}</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="d-flex  justify-content-center w-100">
+              <a href="#" class="btn btn-primary w-100">Ver Detalle</a>
+            </div>
+          </div>
+        </div>
+      `
+    )
+    }
     </div>
-  </div>
-</div>
-`
-)
-}
-</div>
-`
+    `
   }
 }
 customElements.define('product-card', ProductCard);
